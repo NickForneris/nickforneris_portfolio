@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/nickforneris_portfolio/static/css/main.f8bab7d9.css",
+    "main.js": "/nickforneris_portfolio/static/js/main.27c10214.js",
+    "static/media/01NicholasForneris.pdf": "/nickforneris_portfolio/static/media/01NicholasForneris.308e171de26c8e003f58.pdf",
+    "static/media/bootstrap-icons.woff?": "/nickforneris_portfolio/static/media/bootstrap-icons.c1d7432ee75fa194e499.woff",
+    "static/media/bootstrap-icons.woff2?": "/nickforneris_portfolio/static/media/bootstrap-icons.a13b815539b49de48d23.woff2",
+    "static/media/myphoto.jpg": "/nickforneris_portfolio/static/media/myphoto.015eaab9a5a3d1a58f3b.jpg",
+    "index.html": "/nickforneris_portfolio/index.html",
+    "main.f8bab7d9.css.map": "/nickforneris_portfolio/static/css/main.f8bab7d9.css.map",
+    "main.27c10214.js.map": "/nickforneris_portfolio/static/js/main.27c10214.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f8bab7d9.css",
+    "static/js/main.27c10214.js"
+  ]
+}
