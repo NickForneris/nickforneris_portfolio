@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { Col, Row, Button} from 'react-bootstrap';
 import { copy } from '../Copy/copy';
+import resume from '../01NicholasForneris.pdf'
 
-const coverCopy = copy.greeting + copy.name + " and I'm your new" + copy.job;
+const coverCopy = copy.greeting + copy.name + " and I'm your next" + copy.job;
 
 const Cover = () => {
 
@@ -27,7 +28,7 @@ const Cover = () => {
                         <h2 className='blinking-cursor text-white'>{typedCover}</h2>
                         <span className={`${fadeInTag} text`}>{copy.tag}</span>
                     </div>
-                    <div className={`${fadeInTag} mt-3`}><Button variant='light'>RESUME</Button></div>
+                    <div className={`${fadeInTag} mt-3`}><Button href={resume} variant='light'>RESUME</Button></div>
                 </Col>
             </Row>
         </Col>

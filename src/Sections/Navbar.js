@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Nav, Navbar, Container, Button, Modal } from 'react-bootstrap';
+import { Nav, Navbar, Col, Row, Container, Button, Modal } from 'react-bootstrap';
 
 
 const Navigation = () => {
@@ -36,7 +36,12 @@ const Navigation = () => {
                 <Modal.Header>
                     <Modal.Title>Get In Touch!</Modal.Title>
                 </Modal.Header>
-                <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
+                <Modal.Body className='contact'>
+                <a href="https://www.linkedin.com/in/nickforneris/" className='aContact'><i className="bi bi-linkedin m-5"/></a>
+                <a href="https://github.com/NickForneris" className='aContact'><i className="bi bi-github m-5"/></a>
+                <a href="https://twitter.com/Nick_Forneris" className='aContact'><i className="bi bi-twitter m-5"/></a>
+                <a href="mailto:nichoolasdforneris@gmail.com" className='aContact'><i className="bi bi-mailbox m-5"/></a>
+                </Modal.Body>
                 <Modal.Footer>
                     <Button variant="secondary" onClick={handleClose}>
                         Close
