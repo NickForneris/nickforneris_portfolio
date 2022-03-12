@@ -1,5 +1,5 @@
-import { useState, useEffect } from 'react';
-import { Container, Col, Row, Stack } from 'react-bootstrap';
+import React, { useState, useEffect } from 'react';
+import { Col, Row, Button} from 'react-bootstrap';
 import { copy } from '../Copy/copy';
 
 const coverCopy = copy.greeting + copy.name + " and I'm your new" + copy.job;
@@ -12,27 +12,25 @@ const Cover = () => {
     useEffect(() => {
         const timeout = setTimeout(() => {
             setTypedCover(coverCopy.slice(0, typedCover.length + 1))
-        }, 125)
+        }, 100)
         if (typedCover.length == coverCopy.length) {
-            setFadeInTag('fade')
+            setFadeInTag('fadeIn')
         }
         return () => clearTimeout(timeout)
     }, [typedCover])
 
     return (
-        <Container fluid>
-            <Col>
-                <Row className='rowCover'>
-                    <Col className="col-md-4 mx-auto">
+        <Col id='top' className="mx-auto">
+            <Row className='rowBig'>
+                <Col className="col-md-5">
+                    <div>
                         <h2 className='blinking-cursor text-white'>{typedCover}</h2>
-                        <span className={`${fadeInTag} tag`}>{copy.tag}</span>
-                    </Col>
-                </Row>
-                <Row className='rowCover'>
-                    <h2>TEST</h2>
-                </Row>
-            </Col>
-        </Container>
+                        <span className={`${fadeInTag} text`}>{copy.tag}</span>
+                    </div>
+                    <div className={`${fadeInTag} mt-3`}><Button variant='light'>RESUME</Button></div>
+                </Col>
+            </Row>
+        </Col>
     );
 }
 

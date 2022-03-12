@@ -1,32 +1,49 @@
 import React, { useState } from 'react';
-import { Nav, NavDropdown, Navbar, Container, Offcanvas, Form, FormControl, Button, NavLink } from 'react-bootstrap';
+import { Nav, Navbar, Container, Button, Modal } from 'react-bootstrap';
+
 
 const Navigation = () => {
 
+    const [show, setShow] = useState(false);
+
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
+
     return (
-        <Navbar expand="lg" className='color-nav sticky-top' variant='dark'>
-            <Container fluid>
-                <Navbar.Brand href="#">NF</Navbar.Brand>
-                <Navbar.Toggle aria-controls="offcanvasNavbar" />
-                <Navbar.Collapse id="responsive-navbar-nav">
-                    <Navbar.Offcanvas
-                        id="offcanvasNavbar"
-                        aria-labelledby="offcanvasNavbarLabel"
-                        placement="end"
-                    >
-                        <Offcanvas.Header closeButton className='offcanvas-color text-white'>
-                            <Offcanvas.Title id="offcanvasNavbarLabel">NF</Offcanvas.Title>
-                        </Offcanvas.Header>
-                        <Offcanvas.Body className='offcanvas-color'>
-                            <Nav className="justify-content-end flex-grow-1 pe-3">
-                                <Nav.Link href="#action1">Home</Nav.Link>
-                                <Nav.Link href="#action2">Link</Nav.Link>
-                            </Nav>
-                        </Offcanvas.Body>
-                    </Navbar.Offcanvas>
-                </Navbar.Collapse>
-            </Container>
-        </Navbar>
+        <React.Fragment>
+            <Navbar collapseOnSelect expand="lg" className='color-nav' fixed='top' variant='dark'>
+                <Container>
+                    <Navbar.Brand href="#home"></Navbar.Brand>
+                    <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                    <Navbar.Collapse id="responsive-navbar-nav">
+                        <Nav className="mx-auto">
+                            <Nav.Link href="#about">About</Nav.Link>
+                            <Nav.Link href="#skills">Skills</Nav.Link>
+                            <Nav.Link href="#projects">Projects</Nav.Link>
+                            <Nav.Link href="#references">References</Nav.Link>
+                            <Button variant="outline-light" onClick={handleShow}>Contact</Button>
+                        </Nav>
+                    </Navbar.Collapse>
+                </Container>
+            </Navbar>
+
+            <Modal
+                show={show}
+                onHide={handleClose}
+                size="lg"
+                aria-labelledby="contained-modal-title-vcenter"
+                centered>
+                <Modal.Header>
+                    <Modal.Title>Get In Touch!</Modal.Title>
+                </Modal.Header>
+                <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
+                <Modal.Footer>
+                    <Button variant="secondary" onClick={handleClose}>
+                        Close
+                    </Button>
+                </Modal.Footer>
+            </Modal>
+        </React.Fragment>
     );
 }
 
