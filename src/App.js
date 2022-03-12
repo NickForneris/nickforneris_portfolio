@@ -1,14 +1,17 @@
 import React, {useState, useEffect} from 'react';
-import {Container, Button} from 'react-bootstrap';
+import {Container, Button, Stack} from 'react-bootstrap';
 import './App.css';
 import About from './Sections/AboutMeSection';
 import Cover from './Sections/CoverSection'
 import Navigation from './Sections/Navbar';
 import Skills from './Sections/SkillSection';
+import Projects from './Sections/ProjectSection'
+import References from './Sections/References';
 
 const App = () => {
 
-    const [fade, setFade] = useState('hide');
+    const [fadeFob, setFobFade] = useState('hide');
+    const [fadeMore, setMoreFade] = useState('fadeInMore');
     
     useEffect(() => {   
       window.addEventListener("scroll", listenToScroll);
@@ -20,10 +23,16 @@ const App = () => {
       const winScroll = document.documentElement.scrollTop;
       
       if (winScroll == 0) {  
-           setFade('fadeOutFob');
+           setFobFade('fadeOutFob');
       } else {
-           setFade('fadeInFob');
-      }  
+           setFobFade('fadeInFob');
+      } 
+      
+      if (winScroll == 0) {  
+        setMoreFade('fadeInFob');
+      } else {
+        setMoreFade('fadeOutFob');
+      }
     };
 
   return (
@@ -33,7 +42,12 @@ const App = () => {
     <Cover/>
     <About/>
     <Skills/>
-    <Button className={`${fade} fob`} variant="dark" href="#top"><i className="bi bi-arrow-up-circle-fill up"/></Button>
+    <Projects/>
+    <References/>
+    <Button className={`${fadeFob} fob`} variant="dark" href="#top"><i className="bi bi-arrow-up-circle-fill up"/></Button>
+    <h6 className={`${fadeMore} text-white more`}>
+    <i class="bi bi-arrow-bar-down"></i>
+    </h6>
     </Container>
     </React.Fragment>
   );

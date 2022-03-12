@@ -23,7 +23,7 @@ const Cover = () => {
     return (
         <Col id='top' className="mx-auto">
             <Row className='rowBig'>
-                <Col className="col-md-5">
+                <Col className="col-md-6">
                     <div>
                         <h2 className='blinking-cursor text-white'>{typedCover}</h2>
                         <span className={`${fadeInTag} text`}>{copy.tag}</span>

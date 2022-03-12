@@ -1,7 +1,8 @@
-/* * { border: 1px solid rgb(68, 255, 68); } */
+ /* *{ border: 1px solid rgb(68, 255, 68); } */
 
 html, body {
   margin: 0;
+  background-color: rgb(34, 34, 34) !important;
   /* Hide scrollbar*/
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
@@ -26,12 +27,36 @@ html, body {
 }
 
 .rowSmall {
-  height: 50vh;
+  height: 20vh;
+  margin-bottom: 2rem;
   align-items: center;
   justify-content: center;
   background-color: rgb(34, 34, 34);
 }
 
+.rowFill {
+  height: 40vh;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(34, 34, 34);
+}
+
+.skillBadge {
+  filter: grayscale(100%);
+  margin-bottom: 2rem;
+  image-rendering: -webkit-optimize-contrast;
+}
+
+.carousel-item {
+  text-align: center;
+}
+
+.carousel-caption {
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+/* Animations */
 .blinking-cursor:after {
   content: ' | ';
   animation: blink 1s infinite;
@@ -47,6 +72,22 @@ html, body {
 .fadeIn {
   opacity: 0;
   animation: fadein 5s forwards;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+.fadeInMore {
+  opacity: 0;
+  animation: fadein 30s forwards;
 }
 
 @keyframes fadein {
@@ -87,6 +128,14 @@ html, body {
   100% {
     opacity: 0;
   }
+}
+
+.zoom {
+  transition: transform .2s;
+}
+
+.zoom:hover {
+  transform: scale(1.25);
 }
 
 .text {
@@ -156,6 +205,13 @@ label:focus,
 
 .up {
   font-size: 3em;
+}
+
+.more {
+  position: fixed;
+  font-size: 2rem;
+  bottom: 2rem;
+  left: 50%;
 }
 
 .contact {
