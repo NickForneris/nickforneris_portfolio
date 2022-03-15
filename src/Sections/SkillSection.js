@@ -11,9 +11,9 @@ const Skills = () => {
     return (
         <Col id="skills">
         <Row className="rowFill text-white text-center">
-        <h3>SKILLS</h3>
         </Row>
             <Row className='rowSmall'>
+            <h3 className='text-white text-center'>SKILLS</h3>
                 <Col className='text-white text-center zoom'>
                 <a><img className='skillBadge' src={html5} alt="html5 logo"/></a>
                 </Col>

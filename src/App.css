@@ -47,6 +47,10 @@ html, body {
   image-rendering: -webkit-optimize-contrast;
 }
 
+.skillBadge:hover {
+  filter: none !important;
+}
+
 .carousel-item {
   text-align: center;
 }
@@ -166,6 +170,10 @@ html, body {
 	shape-outside:circle();
   image-rendering: -webkit-optimize-contrast;
   image-rendering: crisp-edges;
+}
+
+.myPhoto:hover {
+  filter: none !important;
 }
 
 

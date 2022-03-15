@@ -8,6 +8,7 @@ const Projects = () => {
                 <Carousel>
                     <Carousel.Item>
                         <Col className="mx-auto">
+                        <Row>
 
                             <a href="https://github.com/NickForneris/option-analyzer" className="text-center">
                                 <Image
@@ -16,7 +17,7 @@ const Projects = () => {
                                     fluid
                                 />
                             </a>
-
+                        </Row>
                             <Row className='rowSmall'>
                                 <Col className="mx-auto">
                                     <Carousel.Caption className='text-white'>

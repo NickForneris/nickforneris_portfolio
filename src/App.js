@@ -46,7 +46,7 @@ const App = () => {
     <References/>
     <Button className={`${fadeFob} fob`} variant="dark" href="#top"><i className="bi bi-arrow-up-circle-fill up"/></Button>
     <h6 className={`${fadeMore} text-white more`}>
-    <i class="bi bi-arrow-bar-down"></i>
+    <i className="bi bi-arrow-bar-down"></i>
     </h6>
     </Container>
     </React.Fragment>
