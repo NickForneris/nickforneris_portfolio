@@ -12,9 +12,9 @@ const References = () => {
                       return (
                     <Carousel.Item interval={10000} key={i}>
                         <Col className="mx-auto">
-                        <h2 className="text-white text-center">What Others Say ...</h2>
-                            <Row className='rowSmall'>
-                                <Col className="mx-auto col-md-6 text-white">
+                            <Row className='rowBig'>
+                                <Col className="mx-auto col-md-6 text-white text-center">
+                                <h2>What Others Say ...</h2>
                                 {e}
                                 </Col>
                             </Row>
