@@ -11,9 +11,9 @@ const Navigation = () => {
 
     return (
         <React.Fragment>
-            <Navbar collapseOnSelect expand="lg" className='color-nav' fixed='top' variant='dark'>
+            <Navbar collapseOnSelect expand="xs" className='color-nav' fixed='top' variant='dark'>
                 <Container>
-                    <Navbar.Brand href="#home"></Navbar.Brand>
+                    <Navbar.Brand href="#home">NF</Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="mx-auto">
