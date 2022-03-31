@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/nickforneris_portfolio/static/css/main.554e76e5.css",
-    "main.js": "/nickforneris_portfolio/static/js/main.6d612b30.js",
+    "main.css": "/nickforneris_portfolio/static/css/main.f2f0b27f.css",
+    "main.js": "/nickforneris_portfolio/static/js/main.635b8211.js",
     "static/media/01NicholasForneris.pdf": "/nickforneris_portfolio/static/media/01NicholasForneris.b953e5d67e44e5b2ca5a.pdf",
     "static/media/bootstrap-icons.woff?": "/nickforneris_portfolio/static/media/bootstrap-icons.c1d7432ee75fa194e499.woff",
     "static/media/bootstrap-icons.woff2?": "/nickforneris_portfolio/static/media/bootstrap-icons.a13b815539b49de48d23.woff2",
     "static/media/myphoto.jpg": "/nickforneris_portfolio/static/media/myphoto.015eaab9a5a3d1a58f3b.jpg",
     "static/media/optionanalyzer.png": "/nickforneris_portfolio/static/media/optionanalyzer.fd732f868bf683f8ec2e.png",
     "index.html": "/nickforneris_portfolio/index.html",
-    "main.554e76e5.css.map": "/nickforneris_portfolio/static/css/main.554e76e5.css.map",
-    "main.6d612b30.js.map": "/nickforneris_portfolio/static/js/main.6d612b30.js.map"
+    "main.f2f0b27f.css.map": "/nickforneris_portfolio/static/css/main.f2f0b27f.css.map",
+    "main.635b8211.js.map": "/nickforneris_portfolio/static/js/main.635b8211.js.map"
   },
   "entrypoints": [
-    "static/css/main.554e76e5.css",
-    "static/js/main.6d612b30.js"
+    "static/css/main.f2f0b27f.css",
+    "static/js/main.635b8211.js"
   ]
 }
