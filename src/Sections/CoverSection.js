@@ -3,7 +3,7 @@ import { Col, Row, Button} from 'react-bootstrap';
 import { copy } from '../Copy/copy';
 import resume from '../01NicholasForneris.pdf'
 
-const coverCopy = copy.greeting + copy.name + " and I'm your next" + copy.job;
+const coverCopy = copy.greeting + copy.name + " | " + copy.job;
 
 const Cover = () => {
 
