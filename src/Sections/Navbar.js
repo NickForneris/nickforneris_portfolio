@@ -21,7 +21,7 @@ const Navigation = () => {
                             <Nav.Link href="#skills">Skills</Nav.Link>
                             <Nav.Link href="#projects">Projects</Nav.Link>
                             <Nav.Link href="#references">References</Nav.Link>
-                            {/* <Button variant="outline-light w-25" onClick={handleShow}>Contact</Button> */}
+                            <Button variant="outline-light w-25" onClick={handleShow}>Contact</Button>
                         </Nav>
                     </Navbar.Collapse>
 

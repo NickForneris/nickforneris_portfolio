@@ -28,7 +28,7 @@ const Cover = () => {
                         <h2 className='blinking-cursor text-white'>{typedCover}</h2>
                         <span className={`${fadeInTag} text`}>{copy.tag}</span>
                     </div>
-                    <div className={`${fadeInTag} mt-3 text-end`}><Button href={resume} variant='light'>RESUME</Button></div>
+                    {/* <div className={`${fadeInTag} mt-3 text-end`}><Button href={resume} variant='light'>RESUME</Button></div> */}
                 </Col>
             </Row>
         </Col>
