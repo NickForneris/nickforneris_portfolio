@@ -13,7 +13,7 @@ const Cover = () => {
     useEffect(() => {
         const timeout = setTimeout(() => {
             setTypedCover(coverCopy.slice(0, typedCover.length + 1))
-        }, 100)
+        }, 70)
         if (typedCover.length == coverCopy.length) {
             setFadeInTag('fadeIn')
         }
@@ -28,7 +28,7 @@ const Cover = () => {
                         <h2 className='blinking-cursor text-white'>{typedCover}</h2>
                         <span className={`${fadeInTag} text`}>{copy.tag}</span>
                     </div>
-                    <div className={`${fadeInTag} mt-3`}><Button href={resume} variant='light'>RESUME</Button></div>
+                    <div className={`${fadeInTag} mt-3 text-end`}><Button href={resume} variant='light'>RESUME</Button></div>
                 </Col>
             </Row>
         </Col>

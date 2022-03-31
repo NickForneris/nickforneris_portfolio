@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import {Container, Button, Stack} from 'react-bootstrap';
+import {Container, Button} from 'react-bootstrap';
 import './App.css';
 import About from './Sections/AboutMeSection';
 import Cover from './Sections/CoverSection'
@@ -46,7 +46,7 @@ const App = () => {
     <References/>
     <Button className={`${fadeFob} fob`} variant="dark" href="#top"><i className="bi bi-arrow-up-circle-fill up"/></Button>
     <h6 className={`${fadeMore} text-white more`}>
-    <i className="bi bi-arrow-bar-down"></i>
+    <a className="arrowLink" href="#about"><i className="bi bi-arrow-bar-down"></i></a>
     </h6>
     </Container>
     </React.Fragment>

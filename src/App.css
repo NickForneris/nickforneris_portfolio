@@ -35,7 +35,7 @@ html, body {
 }
 
 .rowFill {
-  height: 40vh;
+  height: 30vh;
   align-items: center;
   justify-content: center;
   background-color: rgb(34, 34, 34);
@@ -139,7 +139,7 @@ html, body {
 }
 
 .zoom:hover {
-  transform: scale(1.25);
+  transform: scale(1.1);
 }
 
 .text {
@@ -223,6 +223,18 @@ label:focus,
   left: 50%;
 }
 
+.card {
+  width: 80vw;
+  margin: 0 auto;
+  color:rgb(255, 255, 255) !important;
+  background-color:rgb(104, 104, 104) !important;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+
 .contact {
   font-size: 4rem !important;
   text-align: center;
@@ -245,4 +257,11 @@ label:focus,
 /* selected link */
 .aContact:active {
   color: rgb(104, 104, 104);
+}
+
+.arrowLink:link, 
+.arrowLink:visited, 
+.arrowLink:hover, 
+.arrowLink:active  {
+  color: rgb(255, 255, 255);
 }

@@ -35,7 +35,8 @@ const Skills = () => {
                 <a><img className='skillBadge' src={github} alt="github logo"/></a>
                 </Col>
             </Row>
-            <Row className="rowFill"/>
+            <Row className="rowFill"></Row>
+            <Row className="rowFill"></Row>
         </Col>
     );
 }

@@ -11,8 +11,8 @@ const Navigation = () => {
 
     return (
         <React.Fragment>
-            <Navbar collapseOnSelect expand="xs" className='color-nav' fixed='top' variant='dark'>
-                <Container>
+            <Navbar collapseOnSelect expand="xl" className='color-nav p-2' fixed='top' variant='dark'>
+           
                     <Navbar.Brand href="#home">NF</Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
@@ -21,10 +21,10 @@ const Navigation = () => {
                             <Nav.Link href="#skills">Skills</Nav.Link>
                             <Nav.Link href="#projects">Projects</Nav.Link>
                             <Nav.Link href="#references">References</Nav.Link>
-                            <Button variant="outline-light" onClick={handleShow}>Contact</Button>
+                            <Button variant="outline-light w-25" onClick={handleShow}>Contact</Button>
                         </Nav>
                     </Navbar.Collapse>
-                </Container>
+
             </Navbar>
 
             <Modal
